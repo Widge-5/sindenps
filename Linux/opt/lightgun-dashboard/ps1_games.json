@@ -12,7 +12,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "No"
       }
     ],
@@ -35,21 +35,21 @@
       "support": "No"
     },
     {
-      "name": "Guncon / G-Con45",
+      "name": "G-Con45 / Guncon",
       "support": "Native"
     }
   ],
   "ports": [
     {
       "port": "Controller Port 1",
-      "device": "Guncon / G-Con45 lightgun adapter"
+      "device": "G-Con45 / Guncon lightgun adapter"
     }
   ],
   "requirements": [],
   "notes": [
     "Supports Guncon-compatible lightguns.",
     "Gameplay combines lightgun shooting with survival horror elements.",
-    "SindenPS should be configured for Guncon / G-Con45 firmware."
+    "SindenPS should be configured for G-Con45 / Guncon firmware."
   ]
 },
   {
@@ -65,7 +65,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "Patch"
       }
     ],
@@ -88,7 +88,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "Patch"
       }
     ],
@@ -125,7 +125,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "Native"
       }
     ],
@@ -158,7 +158,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "Native"
       }
     ],
@@ -179,7 +179,7 @@
         "support": "Unofficial"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "Native"
       }
     ],
@@ -204,7 +204,7 @@
       "support": "No"
     },
     {
-      "name": "Guncon / G-Con45",
+      "name": "G-Con45 / Guncon",
       "support": "No"
     },
     {
@@ -221,7 +221,7 @@
   "requirements": [
     "Flash or select the custom Sony Dual Analog firmware.",
     "SindenPS supports 2 Players, to use 4 Players requires two Raspberry Pi's running SindenPS.",
-    "Do not use Hyper Blaster / Justifier or Guncon / G-Con45 firmware."
+    "Do not use Hyper Blaster / Justifier or G-Con45 / Guncon firmware."
   ],
   "notes": [
   "Galaxian 3 does not use a PlayStation lightgun protocol.",
@@ -250,25 +250,25 @@
       "support": "No"
     },
     {
-      "name": "Guncon / G-Con45",
+      "name": "G-Con45 / Guncon",
       "support": "Native"
     }
   ],
   "ports": [
     {
       "port": "Controller Port 1",
-      "device": "Player 1 Guncon / G-Con45"
+      "device": "Player 1 G-Con45 / Guncon"
     },
     {
       "port": "Controller Port 2",
-      "device": "Player 2 Guncon / G-Con45"
+      "device": "Player 2 G-Con45 / Guncon"
     }
   ],
   "requirements": [],
   "notes": [
     "Known as Oh! Bakyuuun in Japan.",
     "Supports two-player Guncon gameplay.",
-    "SindenPS should be configured for Guncon / G-Con45 firmware."
+    "SindenPS should be configured for G-Con45 / Guncon firmware."
   ]
 },
   {
@@ -284,7 +284,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "Native"
       }
     ],
@@ -307,7 +307,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "Patch"
       }
     ],
@@ -332,7 +332,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "Native"
       }
     ],
@@ -353,7 +353,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "No"
       }
     ],
@@ -374,7 +374,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "Native"
       }
     ],
@@ -395,7 +395,7 @@
       "support": "Native"
     },
     {
-      "name": "Guncon / G-Con45",
+      "name": "G-Con45 / Guncon",
       "support": "Native"
     }
   ],
@@ -420,7 +420,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "Native"
       }
     ],
@@ -445,7 +445,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "Native"
       }
     ],
@@ -469,7 +469,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "Native"
       }
     ],
@@ -493,7 +493,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "No"
       }
     ],
@@ -516,18 +516,18 @@
       "support": "No"
     },
     {
-      "name": "Guncon / G-Con45",
+      "name": "G-Con45 / Guncon",
       "support": "Native"
     }
   ],
   "ports": [
     {
       "port": "Controller Port 1",
-      "device": "Player 1 Guncon / G-Con45"
+      "device": "Player 1 G-Con45 / Guncon"
     },
     {
       "port": "Controller Port 2",
-      "device": "Player 2 Guncon / G-Con45"
+      "device": "Player 2 G-Con45 / Guncon"
     }
   ],
   "requirements": [],
@@ -549,18 +549,18 @@
       "support": "No"
     },
     {
-      "name": "Guncon / G-Con45",
+      "name": "G-Con45 / Guncon",
       "support": "Native"
     }
   ],
   "ports": [
     {
       "port": "Controller Port 1",
-      "device": "Player 1 Guncon / G-Con45"
+      "device": "Player 1 G-Con45 / Guncon"
     },
     {
       "port": "Controller Port 2",
-      "device": "Player 2 Guncon / G-Con45"
+      "device": "Player 2 G-Con45 / Guncon"
     }
   ],
   "requirements": [],
@@ -581,18 +581,18 @@
       "support": "No"
     },
     {
-      "name": "Guncon / G-Con45",
+      "name": "G-Con45 / Guncon",
       "support": "Native"
     }
   ],
   "ports": [
     {
       "port": "Controller Port 1",
-      "device": "Player 1 Guncon / G-Con45"
+      "device": "Player 1 G-Con45 / Guncon"
     },
     {
       "port": "Controller Port 2",
-      "device": "Player 2 Guncon / G-Con45"
+      "device": "Player 2 G-Con45 / Guncon"
     }
   ],
   "requirements": [],
@@ -613,7 +613,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "Patch"
       }
     ],
@@ -638,25 +638,25 @@
       "support": "No"
     },
     {
-      "name": "Guncon / G-Con45",
+      "name": "G-Con45 / Guncon",
       "support": "Native"
     }
   ],
   "ports": [
     {
       "port": "Controller Port 1",
-      "device": "Player 1 Guncon / G-Con45"
+      "device": "Player 1 G-Con45 / Guncon"
     },
     {
       "port": "Controller Port 2",
-      "device": "Player 2 Guncon / G-Con45"
+      "device": "Player 2 G-Con45 / Guncon"
     }
   ],
   "requirements": [],
   "notes": [
     "Japan-exclusive title.",
     "Supports one or two Guncon-compatible lightguns.",
-    "SindenPS should be configured for Guncon / G-Con45 firmware."
+    "SindenPS should be configured for G-Con45 / Guncon firmware."
   ]
 },
   {
@@ -672,14 +672,14 @@
       "support": "No"
     },
     {
-      "name": "Guncon / G-Con45",
+      "name": "G-Con45 / Guncon",
       "support": "Native"
     }
   ],
   "ports": [
     {
       "port": "Controller Port 1",
-      "device": "Guncon / G-Con45 lightgun adapter"
+      "device": "G-Con45 / Guncon lightgun adapter"
     }
   ],
   "requirements": [],
@@ -688,7 +688,7 @@
     "The PAL release allows both Guncon and controller input.",
     "The NTSC-U release disables Guncon functionality and is controller-only.",
     "Use a PAL or NTSC-J version to obtain lightgun support.",
-    "SindenPS should be configured for Guncon / G-Con45 firmware."
+    "SindenPS should be configured for G-Con45 / Guncon firmware."
   ]
 },
   {
@@ -704,7 +704,7 @@
         "support": "Secret Weapon"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "No"
       }
     ],
@@ -728,18 +728,18 @@
       "support": "No"
     },
     {
-      "name": "Guncon / G-Con45",
+      "name": "G-Con45 / Guncon",
       "support": "Native"
     }
   ],
   "ports": [
     {
       "port": "Controller Port 1",
-      "device": "Player 1 Guncon / G-Con45"
+      "device": "Player 1 G-Con45 / Guncon"
     },
     {
       "port": "Controller Port 2",
-      "device": "Player 2 Guncon / G-Con45"
+      "device": "Player 2 G-Con45 / Guncon"
     }
   ],
   "requirements": [],
@@ -747,7 +747,7 @@
     "Japanese-exclusive budget title in the Simple 1500 series.",
     "Designed for Guncon-compatible lightguns.",
     "Supports two-player play when two Guncon-compatible devices are connected.",
-    "SindenPS should be configured for Guncon / G-Con45 firmware.",
+    "SindenPS should be configured for G-Con45 / Guncon firmware.",
     "A Guncon-compatible device is required for normal gameplay."
   ]
 },
@@ -764,18 +764,18 @@
       "support": "No"
     },
     {
-      "name": "Guncon / G-Con45",
+      "name": "G-Con45 / Guncon",
       "support": "Native"
     }
   ],
   "ports": [
     {
       "port": "Controller Port 1",
-      "device": "Player 1 Guncon / G-Con45"
+      "device": "Player 1 G-Con45 / Guncon"
     },
     {
       "port": "Controller Port 2",
-      "device": "Player 2 Guncon / G-Con45"
+      "device": "Player 2 G-Con45 / Guncon"
     }
   ],
   "requirements": [],
@@ -783,7 +783,7 @@
     "Japanese-exclusive sequel to The Gun Shooting.",
     "Designed for Guncon-compatible lightguns.",
     "Supports two-player play when two Guncon-compatible devices are connected.",
-    "SindenPS should be configured for Guncon / G-Con45 firmware.",
+    "SindenPS should be configured for G-Con45 / Guncon firmware.",
     "A Guncon-compatible device is required for normal gameplay."
   ]
 },
@@ -800,7 +800,7 @@
         "support": "Preferred"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "Needs Work"
       }
     ],
@@ -826,7 +826,7 @@
         "support": "Native"
       },
       {
-        "name": "Guncon / G-Con45",
+        "name": "G-Con45 / Guncon",
         "support": "Patch"
       }
     ],
@@ -861,20 +861,20 @@
       "support": "No"
     },
     {
-      "name": "Guncon / G-Con45",
+      "name": "G-Con45 / Guncon",
       "support": "Native"
     }
   ],
   "ports": [
     {
       "port": "Controller Port 1",
-      "device": "Guncon / G-Con45 lightgun adapter"
+      "device": "G-Con45 / Guncon lightgun adapter"
     }
   ],
   "requirements": [],
   "notes": [
     "Uses the standard Time Crisis cover and reload mechanic.",
-    "Guncon or G-Con45 mode is the recommended configuration."
+    "G-Con45 or Guncon mode is the recommended configuration."
   ]
 },
 {
@@ -890,20 +890,20 @@
       "support": "No"
     },
     {
-      "name": "Guncon / G-Con45",
+      "name": "G-Con45 / Guncon",
       "support": "Native"
     }
   ],
   "ports": [
     {
       "port": "Controller Port 1",
-      "device": "Guncon / G-Con45 lightgun adapter"
+      "device": "G-Con45 / Guncon lightgun adapter"
     }
   ],
   "requirements": [],
   "notes": [
     "Uses the standard Time Crisis cover and reload mechanic.",
-    "Guncon or G-Con45 mode is the recommended configuration."
+    "G-Con45 or Guncon mode is the recommended configuration."
   ]
 }
 ]
