@@ -1121,7 +1121,7 @@
   "requirements": [],
   "notes": [
     "Supports one or two players.",
-    "Requires G-Con2 mode.",
+    "Supports both GunCon and GunCon2 devices.",
     "Western-themed arcade shooter.",
     "Calibration can be performed through the game's built-in calibration menu."
   ]
@@ -1223,6 +1223,47 @@
   ]
 },
 {
+  "title": "Time Crisis: Crisis Zone",
+  "system": "PS2",
+  "players": 1,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Single-player only.",
+    "Arcade conversion of Crisis Zone.",
+    "Supports both GunCon and GunCon2 devices.",
+    "Uses the Time Crisis cover and reload mechanic.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
   "title": "Ninja Assault",
   "system": "PS2",
   "players": 2,
@@ -1237,7 +1278,7 @@
     },
     {
       "name": "G-Con45 / Guncon",
-      "support": "no"
+      "support": "Native"
     },
     {
       "name": "Hyper Blaster / Justifier",
