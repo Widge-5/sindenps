@@ -1,6 +1,7 @@
 [
   {
     "title": "Area 51",
+	"system": "PS1",
     "players": 2,
     "regions": {
       "pal": true,
@@ -24,6 +25,7 @@
   },
   {
     "title": "Crypt Killer",
+	"system": "PS1",
     "players": 2,
     "regions": {
       "pal": true,
@@ -47,6 +49,7 @@
   },
   {
     "title": "Die Hard Trilogy",
+	"system": "PS1",
     "players": 1,
     "regions": {
       "pal": true,
@@ -84,6 +87,7 @@
   },
   {
     "title": "Die Hard Trilogy 2",
+	"system": "PS1",
     "players": 1,
     "regions": {
       "pal": true,
@@ -117,6 +121,7 @@
   },
   {
     "title": "Elemental Gearbolt",
+	"system": "PS1",
     "players": 2,
     "regions": {
       "pal": null,
@@ -138,6 +143,7 @@
   },
   {
     "title": "Extreme Ghostbusters",
+	"system": "PS1",
     "players": 2,
     "regions": {
       "pal": true,
@@ -163,6 +169,7 @@
   },
   {
   "title": "Galaxian^3",
+  "system": "PS1",
   "players": 4,
   "regions": {
     "pal": true,
@@ -209,6 +216,7 @@
 },
 {
   "title": "Ghoul Panic",
+  "system": "PS1",
   "players": 2,
   "regions": {
     "pal": true,
@@ -243,6 +251,7 @@
 },
   {
     "title": "Judge Dredd",
+	"system": "PS1",
     "players": 2,
     "regions": {
       "pal": true,
@@ -266,6 +275,7 @@
   },
   {
     "title": "Lethal Enforcers",
+	"system": "PS1",
     "players": 2,
     "regions": {
       "pal": true,
@@ -291,6 +301,7 @@
   },
   {
     "title": "Maximum Force",
+	"system": "PS1",
     "players": 2,
     "regions": {
       "pal": true,
@@ -312,6 +323,7 @@
   },
   {
     "title": "Mighty Hits",
+	"system": "PS1",
     "players": 2,
     "regions": {
       "pal": null,
@@ -333,6 +345,7 @@
   },
   {
     "title": "Mighty Hits Special",
+	"system": "PS1",
     "players": 2,
     "regions": {
       "pal": true,
@@ -354,6 +367,7 @@
   },
   {
   "title": "Moorhuhn",
+  "system": "PS1",
   "players": 2,
   "regions": {
     "pal": true,
@@ -379,6 +393,7 @@
 },
 {
     "title": "Moorhuhn 2",
+	"system": "PS1",
     "players": 2,
     "regions": {
       "pal": true,
@@ -404,6 +419,7 @@
   },
   {
     "title": "Moorhuhn 3",
+	"system": "PS1",
     "players": 2,
     "regions": {
       "pal": true,
@@ -428,6 +444,7 @@
   },
   {
     "title": "Moorhuhn X",
+	"system": "PS1",
     "players": 2,
     "regions": {
       "pal": true,
@@ -452,6 +469,7 @@
   },
   {
     "title": "Police 24/7",
+	"system": "PS2",
     "players": 1,
     "regions": {
       "pal": true,
@@ -475,6 +493,7 @@
   },
 {
   "title": "Point Blank",
+  "system": "PS1",
   "players": 2,
   "regions": {
     "pal": true,
@@ -508,6 +527,7 @@
 },
 {
   "title": "Point Blank 2",
+  "system": "PS1",
   "players": 2,
   "regions": {
     "pal": true,
@@ -540,6 +560,7 @@
 },
 {
   "title": "Point Blank 3",
+  "system": "PS1",
   "players": 2,
   "regions": {
     "pal": true,
@@ -572,6 +593,7 @@
 },
   {
     "title": "Project Horned Owl",
+	"system": "PS1",
     "players": 2,
     "regions": {
       "pal": null,
@@ -597,6 +619,7 @@
     ]
   },{
   "title": "Rescue Shot",
+  "system": "PS1",
   "players": 2,
   "regions": {
     "pal": null,
@@ -631,6 +654,7 @@
 },
   {
   "title": "Resident Evil Survivor",
+  "system": "PS1",
   "players": 1,
   "regions": {
     "pal": true,
@@ -663,6 +687,7 @@
 },
   {
     "title": "Silent Hill",
+	"system": "PS1",
     "players": 0,
     "regions": {
       "pal": true,
@@ -687,6 +712,7 @@
   },
   {
   "title": "Simple 1500 Series Vol. 24: The Gun Shooting",
+  "system": "PS1",
   "players": 2,
   "regions": {
     "pal": null,
@@ -723,6 +749,7 @@
 },
 {
   "title": "Simple 1500 Series Vol. 63: The Gun Shooting 2",
+  "system": "PS1",
   "players": 2,
   "regions": {
     "pal": null,
@@ -759,6 +786,7 @@
 },
   {
     "title": "Sporting Clays",
+	"system": "PS1",
     "players": 1,
     "regions": {
       "pal": null,
@@ -785,6 +813,7 @@
   },
   {
     "title": "Star Wars Rebel Assault 2",
+	"system": "PS1",
     "players": 1,
     "regions": {
       "pal": true,
@@ -820,6 +849,7 @@
   ,
 {
   "title": "Time Crisis",
+  "system": "PS1",
   "players": 1,
   "regions": {
     "pal": true,
@@ -849,6 +879,7 @@
 },
 {
   "title": "Time Crisis: Project Titan",
+  "system": "PS1",
   "players": 1,
   "regions": {
     "pal": true,
@@ -874,6 +905,419 @@
   "notes": [
     "Uses the standard Time Crisis cover and reload mechanic.",
     "G-Con45 or Guncon mode is the recommended configuration."
+  ]
+},
+{
+  "title": "Endgame",
+  "system": "PS2",
+  "players": 1,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Single-player only.",
+    "Requires G-Con2 mode.",
+    "Features on-rails shooting and driving sequences.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
+  "title": "Resident Evil Dead Aim",
+  "system": "PS2",
+  "players": 1,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Single-player only.",
+    "Requires G-Con2 mode.",
+    "Switches between third-person exploration and first-person shooting.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
+  "title": "Dino Stalker",
+  "system": "PS2",
+  "players": 1,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Single-player only.",
+    "Requires G-Con2 mode.",
+    "Part of the Gun Survivor series.",
+    "Supports free movement combined with lightgun aiming.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
+  "title": "Starsky & Hutch",
+  "system": "PS2",
+  "players": 1,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "USB Port 2",
+      "device": "Player 2 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    },
+    {
+      "port": "Controller Port 2",
+      "device": "Player 2 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+  "Supports one or two players.",
+  "Requires G-Con2 mode.",
+  "Player 1 drives while Player 2 uses the lightgun.",
+  "Single-player mode allows one player to control both roles.",
+  "Calibration can be performed through the game's built-in calibration menu."
+]
+}
+,
+{
+  "title": "Gunfighter II: Revenge of Jesse James",
+  "system": "PS2",
+  "players": 2,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "USB Port 2",
+      "device": "Player 2 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    },
+    {
+      "port": "Controller Port 2",
+      "device": "Player 2 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Supports one or two players.",
+    "Requires G-Con2 mode.",
+    "Western-themed arcade shooter.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
+  "title": "Time Crisis II",
+  "system": "PS2",
+  "players": 2,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2  / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "No"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "Native"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "USB Port 2",
+      "device": "Player 2 G-Con2 / GunCon2"
+    },
+	{
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    },
+    {
+      "port": "Controller Port 2",
+      "device": "Player 2 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Supports one or two players.",
+    "Supports both GunCon and GunCon2 devices.",
+    "Uses the standard Time Crisis cover and reload mechanic.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
+  "title": "Time Crisis 3",
+  "system": "PS2",
+  "players": 2,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "USB Port 2",
+      "device": "Player 2 G-Con2 / GunCon2"
+    },
+	{
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    },
+    {
+      "port": "Controller Port 2",
+      "device": "Player 2 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Supports one or two players.",
+    "Supports both GunCon and GunCon2 devices.",
+    "Features weapon selection and special weapon mechanics that are unique to Time Crisis 3.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
+  "title": "Ninja Assault",
+  "system": "PS2",
+  "players": 2,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "no"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "USB Port 2",
+      "device": "Player 2 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    },
+    {
+      "port": "Controller Port 2",
+      "device": "Player 2 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Supports one or two players.",
+    "Requires G-Con2 mode.",
+    "Arcade conversion by Namco.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
+  "title": "Vampire Night",
+  "system": "PS2",
+  "players": 2,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "USB Port 2",
+      "device": "Player 2 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    },
+    {
+      "port": "Controller Port 2",
+      "device": "Player 2 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Supports one or two players.",
+    "Supports both GunCon and GunCon2 devices.",
+    "SindenPS can be used with either G-Con45 / Guncon or G-Con2 / GunCon2 firmware.",
+    "Calibration can be performed through the game's built-in calibration menu.",
+    "Co-developed by Namco and Sega.",
+    "Features branching paths and cooperative gameplay."
   ]
 }
 ]

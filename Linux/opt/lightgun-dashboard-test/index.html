@@ -241,6 +241,25 @@
 	.ps1-game-unsupported {
 		color: #ff6666;
 	}
+	.system-toggle {
+		display:flex;
+		gap:0;
+		margin-bottom:12px;
+	}
+
+	.system-toggle button {
+		padding:10px 20px;
+		background:#222;
+		border:1px solid var(--theme-border);
+		color:#aaa;
+		cursor:pointer;
+	}
+
+	.system-toggle button.active {
+		background:var(--theme-border);
+		color:#fff;
+		font-weight:700;
+	}
 	#temperature-panel { background: #111; }
 	#temperature-status.hot { color: #ff4444; font-weight: 700;	}
 	#temperature-status.warm { color: #ffaa00; font-weight: 700; }
@@ -706,6 +725,20 @@
 			</div>
 
 			<div class="config-row" style="margin-top:16px;">
+			<div class="system-toggle">
+				<button
+					class="active"
+					data-system="PS1"
+					onclick="setGameSystem('PS1')">
+					PS1
+				</button>
+
+				<button
+					data-system="PS2"
+					onclick="setGameSystem('PS2')">
+					PS2
+				</button>
+			</div>
 				<label for="ps1-game-select">
 					Select Game
 
@@ -899,6 +932,57 @@ let systemPowerPending = false;
 let sawSystemOffline = false;
 let modeIndicatorUpdating = false;
 let iconSet = 'pal';
+let selectedSystem = 'PS1';
+
+function setGameSystem(system) {
+    selectedSystem = system;
+
+    document
+        .querySelectorAll('.system-toggle button')
+        .forEach(btn => {
+            btn.classList.toggle(
+                'active',
+                btn.dataset.system === system
+            );
+        });
+
+    populateGameDropdown();
+}
+
+function populateGameDropdown() {
+    const select = document.getElementById(
+        'ps1-game-select'
+    );
+
+    if (!select) return;
+
+    select.innerHTML = '';
+
+    const filteredGames = ps1Games
+        .filter(game =>
+            (game.system || 'PS1') === selectedSystem
+        )
+        .sort((a, b) =>
+            String(a.title || '').localeCompare(
+                String(b.title || '')
+            )
+        );
+
+    filteredGames.forEach(game => {
+        const option =
+            document.createElement('option');
+
+        option.value = game.title;
+        option.textContent = game.title;
+
+        select.appendChild(option);
+    });
+
+    if (filteredGames.length) {
+        select.selectedIndex = 0;
+        renderPs1GameCard();
+    }
+}
 
 const THEME_CLASSES = [
     'ps2-mode',
@@ -1378,8 +1462,9 @@ function renderPs1GameCard() {
         return;
     }
 
-    const index = Number(select.value);
-    const game = ps1Games[index];
+    const game = ps1Games.find(
+        g => g.title === select.value
+    );
 
     container.innerHTML = '';
 
@@ -1389,24 +1474,16 @@ function renderPs1GameCard() {
         return;
     }
 
-    /*
-     * Game title
-     */
     const title = document.createElement('h2');
-
     title.className = 'ps1-game-title';
     title.textContent =
         game.title || 'Unknown Game';
 
     container.appendChild(title);
 
-    /*
-     * Summary cards
-     */
     const regions = game.regions || {};
 
     const summary = document.createElement('div');
-
     summary.className = 'ps1-game-summary';
 
     summary.appendChild(
@@ -1432,9 +1509,6 @@ function renderPs1GameCard() {
 
     container.appendChild(summary);
 
-    /*
-     * Gun support
-     */
     const gunSupportSection =
         createPs1GameSection('Gun Support');
 
@@ -1444,24 +1518,28 @@ function renderPs1GameCard() {
             : [];
 
     if (!gunSupport.length) {
-        const empty = document.createElement('div');
+        const empty =
+            document.createElement('div');
 
-        empty.className = 'ps1-game-empty';
+        empty.className =
+            'ps1-game-empty';
+
         empty.textContent =
             'No gun support information documented.';
 
         gunSupportSection.appendChild(empty);
     } else {
-        const list = document.createElement('ul');
+        const list =
+            document.createElement('ul');
 
         list.className = 'ps1-game-list';
 
         gunSupport.forEach(item => {
-            const row = document.createElement('li');
+            const row =
+                document.createElement('li');
 
-            const name = document.createElement(
-                'strong'
-            );
+            const name =
+                document.createElement('strong');
 
             name.textContent =
                 item.name || 'Unknown gun type';
@@ -1490,9 +1568,6 @@ function renderPs1GameCard() {
 
     container.appendChild(gunSupportSection);
 
-    /*
-     * Port configuration
-     */
     const portsSection =
         createPs1GameSection(
             'Port Configuration'
@@ -1503,20 +1578,25 @@ function renderPs1GameCard() {
         : [];
 
     if (!ports.length) {
-        const empty = document.createElement('div');
+        const empty =
+            document.createElement('div');
 
-        empty.className = 'ps1-game-empty';
+        empty.className =
+            'ps1-game-empty';
+
         empty.textContent =
             'No special port configuration documented.';
 
         portsSection.appendChild(empty);
     } else {
-        const list = document.createElement('ul');
+        const list =
+            document.createElement('ul');
 
         list.className = 'ps1-game-list';
 
         ports.forEach(port => {
-            const row = document.createElement('li');
+            const row =
+                document.createElement('li');
 
             const portName =
                 document.createElement('strong');
@@ -1524,14 +1604,14 @@ function renderPs1GameCard() {
             portName.textContent =
                 port.port || 'Port';
 
-            const device =
+            row.appendChild(portName);
+            row.appendChild(
                 document.createTextNode(
                     ': ' +
-                    (port.device || 'Not specified')
-                );
-
-            row.appendChild(portName);
-            row.appendChild(device);
+                    (port.device ||
+                        'Not specified')
+                )
+            );
 
             list.appendChild(row);
         });
@@ -1541,11 +1621,10 @@ function renderPs1GameCard() {
 
     container.appendChild(portsSection);
 
-    /*
-     * Requirements
-     */
     const requirementsSection =
-        createPs1GameSection('Requirements');
+        createPs1GameSection(
+            'Requirements'
+        );
 
     appendPs1TextList(
         requirementsSection,
@@ -1557,9 +1636,6 @@ function renderPs1GameCard() {
         requirementsSection
     );
 
-    /*
-     * Notes
-     */
     const notesSection =
         createPs1GameSection('Notes');
 
@@ -1608,13 +1684,20 @@ async function loadPs1Games() {
         if (!response.ok || !data.ok) {
             throw new Error(
                 data.error ||
-                'Failed to load PS1 game information'
+                'Failed to load game information'
             );
         }
 
         ps1Games = Array.isArray(data.games)
             ? data.games
             : [];
+
+        if (!ps1Games.length) {
+            select.innerHTML = '';
+            status.textContent =
+                'No games are configured.';
+            return;
+        }
 
         ps1Games.sort((a, b) => {
             return String(a.title || '').localeCompare(
@@ -1626,37 +1709,15 @@ async function loadPs1Games() {
             );
         });
 
-        select.innerHTML = '';
-
-        if (!ps1Games.length) {
-            status.textContent =
-                'No PS1 games are configured.';
-            return;
-        }
-
-        ps1Games.forEach((game, index) => {
-            const option = document.createElement(
-                'option'
-            );
-
-            option.value = String(index);
-            option.textContent =
-                game.title || 'Unknown Game';
-
-            select.appendChild(option);
-        });
-
         select.disabled = false;
-        select.selectedIndex = 0;
+        status.textContent = '';
 
-        status.textContent = "";
-
-        renderPs1GameCard();
-
+        populateGameDropdown();
     } catch (error) {
         ps1Games = [];
         select.innerHTML = '';
         select.disabled = true;
+        container.innerHTML = '';
 
         status.textContent =
             'Unable to load game information: ' +
@@ -2645,26 +2706,69 @@ function confirmSystemAction(action) {
   systemAction(action);
 }
 
+let sindenLogRequestRunning = false;
+
 async function loadSindenLog() {
-  const box = document.getElementById('sinden-log-content');
-  try {
-    const res = await fetch('/api/sinden-log', {
-      cache: 'no-store'
-    });
+    if (sindenLogRequestRunning) {
+        return;
+    }
 
-    const data = await res.json();
-	
+    const tab = document.getElementById(
+        'tab-sindenlog'
+    );
 
-    box.textContent = data.logs || 'Log empty';
+    if (!tab || tab.offsetParent === null) {
+        return;
+    }
 
-    box.parentElement.scrollTop =
-      box.parentElement.scrollHeight;
+    const box = document.getElementById(
+        'sinden-log-content'
+    );
 
-  } catch (e) {
-    box.textContent = 'Waiting for service...';
+    if (!box) {
+        return;
+    }
 
-    setTimeout(loadSindenLog, 2000);
-  }
+    sindenLogRequestRunning = true;
+
+    try {
+        const response = await fetch(
+            '/api/sinden-log',
+            {
+                cache: 'no-store'
+            }
+        );
+
+        if (!response.ok) {
+            throw new Error(
+                `HTTP ${response.status}`
+            );
+        }
+
+        const data = await response.json();
+        const newText = data.logs || 'Log empty';
+
+        if (box.textContent !== newText) {
+            const parent = box.parentElement;
+
+            const wasNearBottom =
+                parent.scrollHeight -
+                parent.scrollTop -
+                parent.clientHeight < 60;
+
+            box.textContent = newText;
+
+            if (wasNearBottom) {
+                parent.scrollTop =
+                    parent.scrollHeight;
+            }
+        }
+    } catch (error) {
+        box.textContent =
+            'Waiting for service...';
+    } finally {
+        sindenLogRequestRunning = false;
+    }
 }
 
 function buildGroupedConfigForm(containerId, groups) {
@@ -3727,7 +3831,7 @@ setInterval(() => {
     loadSindenLog();
   }
 
-}, 1000);
+}, 3000);
 
 setInterval(refreshServices, 1000);
 
