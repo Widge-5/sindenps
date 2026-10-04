@@ -981,11 +981,14 @@
   ],
   "requirements": [],
   "notes": [
-    "Single-player only.",
-    "Requires G-Con2 mode.",
-    "Switches between third-person exploration and first-person shooting.",
-    "Calibration can be performed through the game's built-in calibration menu."
-  ]
+  "Single-player only.",
+  "Part of the Gun Survivor series.",
+  "Supports both GunCon and GunCon2 devices.",
+  "Directional movement controls are only available when using a GunCon2-compatible device.",
+  "When using G-Con45 / Guncon mode, additional controller input may be required for movement functions.",
+  "Switches between exploration and shooting segments.",
+  "Calibration can be performed through the game's built-in calibration menu."
+]
 },
 {
   "title": "Dino Stalker",
