@@ -1029,7 +1029,7 @@
     "Part of the Gun Survivor series.",
     "Supports free movement combined with lightgun aiming.",
 	"Directional movement controls are only available when using a GunCon2-compatible device.",
-	"When using G-Con45 / Guncon mode, additional controller input may be required for movement functions."
+	"When using G-Con45 / Guncon mode, additional controller input may be required for movement functions.",
     "Calibration can be performed through the game's built-in calibration menu."
   ]
 },
@@ -1311,7 +1311,7 @@
   "requirements": [],
   "notes": [
     "Supports one or two players.",
-    ""Supports both GunCon and GunCon2 devices.",
+    "Supports both GunCon and GunCon2 devices.",
     "Arcade conversion by Namco.",
     "Calibration can be performed through the game's built-in calibration menu."
   ]
