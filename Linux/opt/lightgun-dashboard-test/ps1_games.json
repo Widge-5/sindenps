@@ -23,36 +23,6 @@
     ]
   },
   {
-  "title": "Chaos Break",
-  "players": 1,
-  "regions": {
-    "pal": true,
-    "ntsc": true
-  },
-  "gun_support": [
-    {
-      "name": "Hyper Blaster / Justifier",
-      "support": "No"
-    },
-    {
-      "name": "G-Con45 / Guncon",
-      "support": "Native"
-    }
-  ],
-  "ports": [
-    {
-      "port": "Controller Port 1",
-      "device": "G-Con45 / Guncon lightgun adapter"
-    }
-  ],
-  "requirements": [],
-  "notes": [
-    "Supports Guncon-compatible lightguns.",
-    "Gameplay combines lightgun shooting with survival horror elements.",
-    "SindenPS should be configured for G-Con45 / Guncon firmware."
-  ]
-},
-  {
     "title": "Crypt Killer",
     "players": 2,
     "regions": {

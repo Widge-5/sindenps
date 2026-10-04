@@ -206,9 +206,9 @@ sudo apt-get clean
 log "Package cleanup complete."
 
 #-----------------------------------------------------------
-# Step 6) Create folders, download VERSION-based assets
+# Step 6) Create folders, download assets
 #-----------------------------------------------------------
-log "Preparing /opt/sinden and user directories; downloading VERSION-based PS1/PS2 assets."
+log "Preparing /opt/sinden and user directories; downloading PS1/PS2 assets."
 
 install -d -o root -g root /opt
 install -d -o sinden -g sinden /opt/sinden
@@ -477,7 +477,7 @@ PY_BIN="python3"
 SYSTEMCTL="/usr/bin/systemctl"
 SUDO="/usr/bin/sudo"
 GUNICORN_BIND="0.0.0.0:5000"
-SITEVERSION="lightgun-dashboard"
+SITEVERSION="lightgun-dashboard-test"
 
 # PS config files
 CFG_PS1="/home/${APP_USER}/Lightgun/PS1/LightgunMono.exe.config"
