@@ -1365,5 +1365,45 @@
     "Co-developed by Namco and Sega.",
     "Features branching paths and cooperative gameplay."
   ]
+},
+{
+  "title": "GunCom 2 (Death Crimson OX+)",
+  "system": "PS2",
+  "players": 1,
+  "regions": {
+    "pal": true,
+    "ntsc": false
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "European release of Death Crimson OX+.",
+    "Single-player lightgun shooter.",
+    "Supports both GunCon and GunCon2 devices.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
 }
 ]
