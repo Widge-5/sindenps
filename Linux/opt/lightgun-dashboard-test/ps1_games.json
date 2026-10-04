@@ -942,7 +942,7 @@
   "requirements": [],
   "notes": [
     "Single-player only.",
-    "Requires G-Con2 mode.",
+    "Supports both GunCon and GunCon2 devices.",
     "Features on-rails shooting and driving sequences.",
     "Calibration can be performed through the game's built-in calibration menu."
   ]
@@ -1028,13 +1028,15 @@
     "Requires G-Con2 mode.",
     "Part of the Gun Survivor series.",
     "Supports free movement combined with lightgun aiming.",
+	"Directional movement controls are only available when using a GunCon2-compatible device.",
+	"When using G-Con45 / Guncon mode, additional controller input may be required for movement functions."
     "Calibration can be performed through the game's built-in calibration menu."
   ]
 },
 {
   "title": "Starsky & Hutch",
   "system": "PS2",
-  "players": 1,
+  "players": 2,
   "regions": {
     "pal": true,
     "ntsc": true
@@ -1139,7 +1141,7 @@
   },
   "gun_support": [
     {
-      "name": "G-Con2  / GunCon2",
+      "name": "G-Con2 / GunCon2",
       "support": "Native"
     },
     {
@@ -1309,7 +1311,7 @@
   "requirements": [],
   "notes": [
     "Supports one or two players.",
-    "Requires G-Con2 mode.",
+    ""Supports both GunCon and GunCon2 devices.",
     "Arcade conversion by Namco.",
     "Calibration can be performed through the game's built-in calibration menu."
   ]

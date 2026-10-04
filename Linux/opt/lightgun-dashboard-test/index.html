@@ -1730,9 +1730,28 @@ async function openPs1GameGuideModal() {
         'ps1-game-guide-modal'
     );
 
+    const platformSelect = document.getElementById(
+        'platform-select'
+    );
+
     if (!modal) {
         return;
     }
+
+    selectedSystem =
+        platformSelect &&
+        platformSelect.value === 'ps2'
+            ? 'PS2'
+            : 'PS1';
+
+    document
+        .querySelectorAll('.system-toggle button')
+        .forEach(button => {
+            button.classList.toggle(
+                'active',
+                button.dataset.system === selectedSystem
+            );
+        });
 
     modal.style.display = 'block';
 
@@ -2860,16 +2879,13 @@ async function loadConfig(platform) {
                 : 'none';
     }
 
-    if (gameGuideBtn) {
-        gameGuideBtn.style.display =
-            platform === 'ps1'
-                ? ''
-                : 'none';
-    }
-
-    if (platform !== 'ps1') {
-        closePs1GameGuideModal();
-    }
+	if (gameGuideBtn) {
+		gameGuideBtn.style.display =
+			platform === 'ps1' ||
+			platform === 'ps2'
+				? ''
+				: 'none';
+	}
 
     const res = await fetch(
         `/api/config?platform=${encodeURIComponent(platform)}`
