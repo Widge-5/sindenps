@@ -1146,11 +1146,11 @@
     },
     {
       "name": "G-Con45 / Guncon",
-      "support": "No"
+      "support": "Native"
     },
     {
       "name": "Hyper Blaster / Justifier",
-      "support": "Native"
+      "support": "No"
     }
   ],
   "ports": [
