@@ -145,16 +145,16 @@ while :; do
 if [ "$IsPsxMode" == 1 ]; then
     	echo "[INFO] Launching PS1/LightgunMono.exe..."
     	cd /home/sinden/Lightgun/PS1/
-		# Keep only the newest Mono crash file
-		find . -maxdepth 1 -type f -name "mono_crash*" \
-			-printf "%T@ %p\n" | sort -nr | tail -n +3 | cut -d' ' -f2- | xargs -r rm -f
+    	# Keep only the newest Mono crash file
+    	find . -maxdepth 1 -type f -name "mono_crash*" \
+    		-printf "%T@ %p\n" | sort -nr | tail -n +3 | cut -d' ' -f2- | xargs -r rm -f
     	sudo mono LightgunMono.exe
 else
 	echo "[INFO] Launching PS2/LightgunMono.exe..."
     	cd /home/sinden/Lightgun/PS2/
-		# Keep only the newest Mono crash file
-		find . -maxdepth 1 -type f -name "mono_crash*" \
-			-printf "%T@ %p\n" | sort -nr | tail -n +3 | cut -d' ' -f2- | xargs -r rm -f
+    	# Keep only the newest Mono crash file
+    	find . -maxdepth 1 -type f -name "mono_crash*" \
+    		-printf "%T@ %p\n" | sort -nr | tail -n +3 | cut -d' ' -f2- | xargs -r rm -f
     	sudo mono LightgunMono.exe
 fi
 done
