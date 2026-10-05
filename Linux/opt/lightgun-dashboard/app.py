@@ -1063,11 +1063,41 @@ def service_logs(service):
 @app.route("/api/sinden-log")
 def sinden_log():
     try:
-        with open(SINDEN_LOGFILE, "r", encoding="utf-8", errors="replace") as f:
-            return jsonify({"logs": f.read()})
-    except Exception as e:
-        return jsonify({"logs": f"Error reading log: {e}"})
+        max_bytes = 200000
 
+        with open(
+            SINDEN_LOGFILE,
+            "rb"
+        ) as f:
+            f.seek(0, os.SEEK_END)
+            file_size = f.tell()
+
+            if file_size > max_bytes:
+                f.seek(-max_bytes, os.SEEK_END)
+                data = f.read()
+
+                newline = data.find(b"\n")
+
+                if newline >= 0:
+                    data = data[newline + 1:]
+            else:
+                f.seek(0)
+                data = f.read()
+
+        logs = data.decode(
+            "utf-8",
+            errors="replace"
+        )
+
+        return jsonify({
+            "logs": logs
+        })
+
+    except Exception as e:
+        return jsonify({
+            "logs": f"Error reading log: {e}"
+        })
+ 
 
 @app.route("/api/system/<action>", methods=["POST"])
 def api_system_action(action):
@@ -1513,9 +1543,9 @@ def index():
     with open("/opt/lightgun-dashboard/index.html", "r", encoding="utf-8") as f:
         return render_template_string(f.read())
         
-@app.route("/api/ps1/games")
-def api_ps1_games():
-    path = "/opt/lightgun-dashboard/ps1_games.json"
+@app.route("/api/game-guides")
+def api_game_guides():
+    path = "/opt/lightgun-dashboard/game_guides.json"
 
     try:
         with open(path, "r", encoding="utf-8") as f:
