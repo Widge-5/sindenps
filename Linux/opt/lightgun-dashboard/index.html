@@ -1396,7 +1396,7 @@ function ps1GunSupportClass(value) {
     return '';
 }
 
-function createPs1SummaryCard(labelText, valueText) {
+function createGameSummaryCard(labelText, valueText) {
     const card = document.createElement('div');
     card.className = 'ps1-game-summary-card';
 
@@ -1489,21 +1489,21 @@ function renderGameGuideCard() {
     summary.className = 'ps1-game-summary';
 
     summary.appendChild(
-        createPs1SummaryCard(
+        createGameSummaryCard(
             'Shooters',
             String(game.players ?? 'Unknown')
         )
     );
 
     summary.appendChild(
-        createPs1SummaryCard(
+        createGameSummaryCard(
             'PAL',
             ps1RegionValue(regions.pal)
         )
     );
 
     summary.appendChild(
-        createPs1SummaryCard(
+        createGameSummaryCard(
             'NTSC',
             ps1RegionValue(regions.ntsc)
         )
