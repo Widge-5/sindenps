@@ -1076,7 +1076,7 @@
     "requirements": [],
     "notes": [
       "Supports one or two players.",
-      "Requires G-Con2 mode.",
+      "Supports both GunCon and GunCon2 devices.",
       "Player 1 drives while Player 2 uses the lightgun.",
       "Single-player mode allows one player to control both roles.",
       "Calibration can be performed through the game's built-in calibration menu."
