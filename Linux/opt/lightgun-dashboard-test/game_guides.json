@@ -1405,4 +1405,565 @@
       "Calibration can be performed through the game's built-in calibration menu."
     ]
   }
+  ,
+{
+  "title": "Time Crisis",
+  "system": "PS1",
+  "players": 1,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    }
+  ],
+  "ports": [
+    {
+      "port": "Controller Port 1",
+      "device": "G-Con45 / Guncon lightgun adapter"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Uses the standard Time Crisis cover and reload mechanic.",
+    "G-Con45 or Guncon mode is the recommended configuration."
+  ]
+},
+{
+  "title": "Time Crisis: Project Titan",
+  "system": "PS1",
+  "players": 1,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    }
+  ],
+  "ports": [
+    {
+      "port": "Controller Port 1",
+      "device": "G-Con45 / Guncon lightgun adapter"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Uses the standard Time Crisis cover and reload mechanic.",
+    "G-Con45 or Guncon mode is the recommended configuration."
+  ]
+},
+{
+  "title": "Endgame",
+  "system": "PS2",
+  "players": 1,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Single-player only.",
+    "Supports both GunCon and GunCon2 devices.",
+    "Features on-rails shooting and driving sequences.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
+  "title": "Resident Evil Dead Aim",
+  "system": "PS2",
+  "players": 1,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Single-player only.",
+    "Part of the Gun Survivor series.",
+    "Supports both GunCon and GunCon2 devices.",
+    "Directional movement controls are only available when using a GunCon2-compatible device.",
+    "When using G-Con45 / Guncon mode, additional controller input may be required for movement functions.",
+    "Switches between exploration and shooting segments.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
+  "title": "Dino Stalker",
+  "system": "PS2",
+  "players": 1,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Single-player only.",
+    "Requires G-Con2 mode.",
+    "Part of the Gun Survivor series.",
+    "Supports free movement combined with lightgun aiming.",
+    "Directional movement controls are only available when using a GunCon2-compatible device.",
+    "When using G-Con45 / Guncon mode, additional controller input may be required for movement functions.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
+  "title": "Starsky & Hutch",
+  "system": "PS2",
+  "players": 1,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "USB Port 2",
+      "device": "Player 2 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    },
+    {
+      "port": "Controller Port 2",
+      "device": "Player 2 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Supports one or two players.",
+    "Requires G-Con2 mode.",
+    "Player 1 drives while Player 2 uses the lightgun.",
+    "Single-player mode allows one player to control both roles.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+}
+,
+{
+  "title": "Gunfighter II: Revenge of Jesse James",
+  "system": "PS2",
+  "players": 2,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "USB Port 2",
+      "device": "Player 2 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    },
+    {
+      "port": "Controller Port 2",
+      "device": "Player 2 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Supports one or two players.",
+    "Supports both GunCon and GunCon2 devices.",
+    "Western-themed arcade shooter.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
+  "title": "Time Crisis II",
+  "system": "PS2",
+  "players": 2,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "USB Port 2",
+      "device": "Player 2 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    },
+    {
+      "port": "Controller Port 2",
+      "device": "Player 2 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Supports one or two players.",
+    "Supports both GunCon and GunCon2 devices.",
+    "Uses the standard Time Crisis cover and reload mechanic.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
+  "title": "Time Crisis 3",
+  "system": "PS2",
+  "players": 2,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "USB Port 2",
+      "device": "Player 2 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    },
+    {
+      "port": "Controller Port 2",
+      "device": "Player 2 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Supports one or two players.",
+    "Supports both GunCon and GunCon2 devices.",
+    "Features weapon selection and special weapon mechanics that are unique to Time Crisis 3.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
+  "title": "Time Crisis: Crisis Zone",
+  "system": "PS2",
+  "players": 1,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Single-player only.",
+    "Arcade conversion of Crisis Zone.",
+    "Supports both GunCon and GunCon2 devices.",
+    "Uses the Time Crisis cover and reload mechanic.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
+  "title": "Ninja Assault",
+  "system": "PS2",
+  "players": 2,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "USB Port 2",
+      "device": "Player 2 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    },
+    {
+      "port": "Controller Port 2",
+      "device": "Player 2 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Supports one or two players.",
+    "Supports both GunCon and GunCon2 devices.",
+    "Arcade conversion by Namco.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+},
+{
+  "title": "Vampire Night",
+  "system": "PS2",
+  "players": 2,
+  "regions": {
+    "pal": true,
+    "ntsc": true
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "USB Port 2",
+      "device": "Player 2 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    },
+    {
+      "port": "Controller Port 2",
+      "device": "Player 2 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "Supports one or two players.",
+    "Supports both GunCon and GunCon2 devices.",
+    "SindenPS can be used with either G-Con45 / Guncon or G-Con2 / GunCon2 firmware.",
+    "Calibration can be performed through the game's built-in calibration menu.",
+    "Co-developed by Namco and Sega.",
+    "Features branching paths and cooperative gameplay."
+  ]
+},
+{
+  "title": "GunCom 2 (Death Crimson OX+)",
+  "system": "PS2",
+  "players": 1,
+  "regions": {
+    "pal": true,
+    "ntsc": false
+  },
+  "gun_support": [
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "Native"
+    },
+    {
+      "name": "G-Con45 / Guncon",
+      "support": "Native"
+    },
+    {
+      "name": "Hyper Blaster / Justifier",
+      "support": "No"
+    }
+  ],
+  "ports": [
+    {
+      "port": "USB Port 1",
+      "device": "Player 1 G-Con2 / GunCon2"
+    },
+    {
+      "port": "Controller Port 1",
+      "device": "Player 1 G-Con45 / Guncon"
+    }
+  ],
+  "requirements": [],
+  "notes": [
+    "European release of Death Crimson OX+.",
+    "Single-player lightgun shooter.",
+    "Supports both GunCon and GunCon2 devices.",
+    "Calibration can be performed through the game's built-in calibration menu."
+  ]
+}
 ]
+
