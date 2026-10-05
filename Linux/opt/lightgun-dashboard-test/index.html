@@ -960,7 +960,7 @@ function populateGameDropdown() {
 
     select.innerHTML = '';
 
-    const filteredGames = ps1Games
+    const filteredGames = gameGuides
         .filter(game =>
             (game.system || 'PS1') === selectedSystem
         )
@@ -1414,7 +1414,7 @@ function createPs1SummaryCard(labelText, valueText) {
     return card;
 }
 
-function createPs1GameSection(titleText) {
+function creategameGuidesection(titleText) {
     const section = document.createElement('section');
     section.className = 'ps1-game-section';
 
@@ -1464,7 +1464,7 @@ function renderGameGuideCard() {
         return;
     }
 
-    const game = ps1Games.find(
+    const game = gameGuides.find(
         g => g.title === select.value
     );
 
@@ -1512,7 +1512,7 @@ function renderGameGuideCard() {
     container.appendChild(summary);
 
     const gunSupportSection =
-        createPs1GameSection('Gun Support');
+        creategameGuidesection('Gun Support');
 
     const gunSupport =
         Array.isArray(game.gun_support)
@@ -1571,7 +1571,7 @@ function renderGameGuideCard() {
     container.appendChild(gunSupportSection);
 
     const portsSection =
-        createPs1GameSection(
+        creategameGuidesection(
             'Port Configuration'
         );
 
@@ -1624,7 +1624,7 @@ function renderGameGuideCard() {
     container.appendChild(portsSection);
 
     const requirementsSection =
-        createPs1GameSection(
+        creategameGuidesection(
             'Requirements'
         );
 
@@ -1639,7 +1639,7 @@ function renderGameGuideCard() {
     );
 
     const notesSection =
-        createPs1GameSection('Notes');
+        creategameGuidesection('Notes');
 
     appendPs1TextList(
         notesSection,
@@ -1690,18 +1690,18 @@ async function loadGameGuides() {
             );
         }
 
-        ps1Games = Array.isArray(data.games)
+        gameGuides = Array.isArray(data.games)
             ? data.games
             : [];
 
-        if (!ps1Games.length) {
+        if (!gameGuides.length) {
             select.innerHTML = '';
             status.textContent =
                 'No games are configured.';
             return;
         }
 
-        ps1Games.sort((a, b) => {
+        gameGuides.sort((a, b) => {
             return String(a.title || '').localeCompare(
                 String(b.title || ''),
                 undefined,
@@ -1716,7 +1716,7 @@ async function loadGameGuides() {
 
         populateGameDropdown();
     } catch (error) {
-        ps1Games = [];
+        gameGuides = [];
         select.innerHTML = '';
         select.disabled = true;
         container.innerHTML = '';

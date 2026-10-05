@@ -3501,7 +3501,13 @@ async function refreshSindenpsStatus() {
 	  return;
 	}
 
-    const localRes = await fetch('/api/version');
+    const localRes = await fetch(
+            '/api/version',
+            {
+                cache: 'no-store'
+            }
+        );
+        
     const localData = await localRes.json();
 
     if (!localData.ok) {
@@ -3520,8 +3526,12 @@ async function refreshSindenpsStatus() {
     const local = localData.sindenps_version;
 
     const remote = await fetch(
-      "https://raw.githubusercontent.com/th3drk0ne/sindenps/main/VERSION"
-    ).then(r => r.text());
+            "https://raw.githubusercontent.com/th3drk0ne/sindenps/main/VERSION?t=" +
+            Date.now(),
+            {
+                cache: 'no-store'
+            }
+        ).then(r => r.text());
 
     const banner = document.getElementById('update-banner');
     const bannerText = document.getElementById('update-banner-text');
