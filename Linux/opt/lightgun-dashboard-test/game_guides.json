@@ -1036,7 +1036,7 @@
 {
   "title": "Starsky & Hutch",
   "system": "PS2",
-  "players": 2,
+  "players": 1,
   "regions": {
     "pal": true,
     "ntsc": true
