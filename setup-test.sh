@@ -532,6 +532,13 @@ sudo wget -nv -O /opt/lightgun-dashboard/game_guides.json \
 sudo chown "${APP_USER}:${APP_GROUP}" "${APP_DIR}/game_guides.json"
 log "game_guides.json Downloaded to ${APP_DIR}/game_guides.json"
 
+OLD_CFG="${APP_DIR}/ps1_games.json"
+# Remove old CFG if it exists
+if [ -L "$OLD_CFG" ] || [ -e "$OLD_CFG" ]; then
+    sudo rm -f "$OLD_CFG"
+fi
+
+
 log "=== 6) Systemd unit for dashboard ==="
 sudo bash -c "cat > /etc/systemd/system/lightgun-dashboard.service" <<UNIT_EOF
 [Unit]
