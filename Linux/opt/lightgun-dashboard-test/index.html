@@ -960,7 +960,7 @@ function populateGameDropdown() {
 
     select.innerHTML = '';
 
-    const filteredGames = gameGuides
+    const filteredGames = ps1Games
         .filter(game =>
             (game.system || 'PS1') === selectedSystem
         )
@@ -1396,7 +1396,7 @@ function ps1GunSupportClass(value) {
     return '';
 }
 
-function createPs1SummaryCard(labelText, valueText) {
+function createGameSummaryCard(labelText, valueText) {
     const card = document.createElement('div');
     card.className = 'ps1-game-summary-card';
 
@@ -1414,7 +1414,7 @@ function createPs1SummaryCard(labelText, valueText) {
     return card;
 }
 
-function creategameGuidesection(titleText) {
+function createPs1GameSection(titleText) {
     const section = document.createElement('section');
     section.className = 'ps1-game-section';
 
@@ -1464,7 +1464,7 @@ function renderGameGuideCard() {
         return;
     }
 
-    const game = gameGuides.find(
+    const game = ps1Games.find(
         g => g.title === select.value
     );
 
@@ -1489,21 +1489,21 @@ function renderGameGuideCard() {
     summary.className = 'ps1-game-summary';
 
     summary.appendChild(
-        createPs1SummaryCard(
+        createGameSummaryCard(
             'Shooters',
             String(game.players ?? 'Unknown')
         )
     );
 
     summary.appendChild(
-        createPs1SummaryCard(
+        createGameSummaryCard(
             'PAL',
             ps1RegionValue(regions.pal)
         )
     );
 
     summary.appendChild(
-        createPs1SummaryCard(
+        createGameSummaryCard(
             'NTSC',
             ps1RegionValue(regions.ntsc)
         )
@@ -1512,7 +1512,7 @@ function renderGameGuideCard() {
     container.appendChild(summary);
 
     const gunSupportSection =
-        creategameGuidesection('Gun Support');
+        createPs1GameSection('Gun Support');
 
     const gunSupport =
         Array.isArray(game.gun_support)
@@ -1571,7 +1571,7 @@ function renderGameGuideCard() {
     container.appendChild(gunSupportSection);
 
     const portsSection =
-        creategameGuidesection(
+        createPs1GameSection(
             'Port Configuration'
         );
 
@@ -1624,7 +1624,7 @@ function renderGameGuideCard() {
     container.appendChild(portsSection);
 
     const requirementsSection =
-        creategameGuidesection(
+        createPs1GameSection(
             'Requirements'
         );
 
@@ -1639,7 +1639,7 @@ function renderGameGuideCard() {
     );
 
     const notesSection =
-        creategameGuidesection('Notes');
+        createPs1GameSection('Notes');
 
     appendPs1TextList(
         notesSection,
@@ -1690,18 +1690,18 @@ async function loadGameGuides() {
             );
         }
 
-        gameGuides = Array.isArray(data.games)
+        ps1Games = Array.isArray(data.games)
             ? data.games
             : [];
 
-        if (!gameGuides.length) {
+        if (!ps1Games.length) {
             select.innerHTML = '';
             status.textContent =
                 'No games are configured.';
             return;
         }
 
-        gameGuides.sort((a, b) => {
+        ps1Games.sort((a, b) => {
             return String(a.title || '').localeCompare(
                 String(b.title || ''),
                 undefined,
@@ -1716,7 +1716,7 @@ async function loadGameGuides() {
 
         populateGameDropdown();
     } catch (error) {
-        gameGuides = [];
+        ps1Games = [];
         select.innerHTML = '';
         select.disabled = true;
         container.innerHTML = '';
@@ -3501,7 +3501,13 @@ async function refreshSindenpsStatus() {
 	  return;
 	}
 
-    const localRes = await fetch('/api/version');
+    const localRes = await fetch(
+            '/api/version',
+            {
+                cache: 'no-store'
+            }
+        );
+        
     const localData = await localRes.json();
 
     if (!localData.ok) {
@@ -3520,8 +3526,12 @@ async function refreshSindenpsStatus() {
     const local = localData.sindenps_version;
 
     const remote = await fetch(
-      "https://raw.githubusercontent.com/th3drk0ne/sindenps/main/VERSION"
-    ).then(r => r.text());
+            "https://raw.githubusercontent.com/th3drk0ne/sindenps/main/VERSION?t=" +
+            Date.now(),
+            {
+                cache: 'no-store'
+            }
+        ).then(r => r.text());
 
     const banner = document.getElementById('update-banner');
     const bannerText = document.getElementById('update-banner-text');

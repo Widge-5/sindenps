@@ -1258,15 +1258,49 @@ def _group_by_category(items):
 
 def _split_by_player(appsettings: ET.Element):
     items = _settings_with_comments(appsettings)
+
     p1 = []
     p2 = []
+
     for it in items:
         k = it["key"]
+
         if k.endswith("P2"):
-            p2.append({"key": k[:-2], "value": it["value"], "comment": it["comment"]})
+            p2.append({
+                "key": k[:-2],
+                "value": it["value"],
+                "comment": it["comment"]
+            })
         else:
-            p1.append({"key": k, "value": it["value"], "comment": it["comment"]})
-    return p1, p2, _group_by_category(p1), _group_by_category(p2)
+            p1.append({
+                "key": k,
+                "value": it["value"],
+                "comment": it["comment"]
+            })
+
+    #
+    # Copy Player 1 comments to Player 2 when missing
+    #
+    p1_comment_map = {
+        item["key"]: item.get("comment", "")
+        for item in p1
+        if item.get("comment")
+    }
+
+    for item in p2:
+        if not item.get("comment"):
+            item["comment"] = p1_comment_map.get(
+                item["key"],
+                ""
+            )
+
+    return (
+        p1,
+        p2,
+        _group_by_category(p1),
+        _group_by_category(p2)
+    )
+
 
 
 PROFILE_NAME_RE = re.compile(r"^[A-Za-z0-9_-]{1,60}$")
