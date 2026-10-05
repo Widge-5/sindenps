@@ -1543,9 +1543,9 @@ def index():
     with open("/opt/lightgun-dashboard/index.html", "r", encoding="utf-8") as f:
         return render_template_string(f.read())
         
-@app.route("/api/ps1/games")
-def api_ps1_games():
-    path = "/opt/lightgun-dashboard/ps1_games.json"
+@app.route("/api/game-guides")
+def api_game_guides():
+    path = "/opt/lightgun-dashboard/game_guides.json"
 
     try:
         with open(path, "r", encoding="utf-8") as f:

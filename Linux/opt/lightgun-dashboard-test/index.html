@@ -152,7 +152,7 @@
 		font-weight: 700;
 		line-height: 1.3;
 	}
-	#ps1-game-select {
+	#game-guide-select {
 		width: 100%;
 		padding: 10px;
 		background: #000;
@@ -331,13 +331,13 @@
 	  #update-progress { display: block; width: 100%; text-align: center; color: #3cf; font-size: 14px; }
 	  #pull-refresh { display: block; position: fixed; top: -40px; left: 0; right: 0; text-align: center; color: #ccc; transition: top 0.2s ease; z-index: 1000; pointer-events: none; }
       #pull-refresh.active { top: 10px; }
-		#ps1-game-guide-modal > .dialog {
+		#game-guide-modal > .dialog {
 			width: 95vw !important;
 			margin: 2vh auto !important;
 			max-height: 96vh !important;
 			padding: 12px 12px calc(20px + env(safe-area-inset-bottom)) 12px !important;
 		}
-		#ps1-game-card {
+		#game-guide-card {
 			padding-bottom: 6px;
 		}
 		.ps1-game-summary {
@@ -648,10 +648,10 @@
 		  ⌖ Calibration
 		</button>
 		<button
-			id="btn-ps1-game-guide"
+			id="btn-game-guide"
 			class="btn-secondary"
 			style="display:none;"
-			onclick="openPs1GameGuideModal()">
+			onclick="openGameGuideModal()">
 			Game Guide
 		</button>
 		<span id="config-status" class="config-status-inline"></span>
@@ -684,7 +684,7 @@
     </div>
 	
 	<div
-		id="ps1-game-guide-modal"
+		id="game-guide-modal"
 		style="
 			display:none;
 			position:fixed;
@@ -714,12 +714,12 @@
 				">
 
 				<div class="service-name">
-					Lightgun Game Guide
+					Lightgun Compatibility Guide
 				</div>
 
 				<button
 					class="btn-tertiary"
-					onclick="closePs1GameGuideModal()">
+					onclick="closeGameGuideModal()">
 					X
 				</button>
 			</div>
@@ -739,7 +739,7 @@
 					PS2
 				</button>
 			</div>
-				<label for="ps1-game-select">
+				<label for="game-guide-select">
 					Select Title
 
 					<small>
@@ -749,18 +749,18 @@
 				</label>
 
 				<select
-					id="ps1-game-select"
-					onchange="renderPs1GameCard()">
+					id="game-guide-select"
+					onchange="renderGameGuideCard()">
 				</select>
 			</div>
 
 			<div
-				id="ps1-game-guide-status"
+				id="game-guide-status"
 				class="service-status"
 				style="margin:12px 0;">
 			</div>
 
-			<div id="ps1-game-card"></div>
+			<div id="game-guide-card"></div>
 		</div>
 	</div>
 
@@ -927,7 +927,7 @@
 let lastFirmwareLog = "";
 let sindenpsLastRunning = 0;
 let lastFirmwarePorts = [];
-let ps1Games = [];
+let gameGuides = [];
 let systemPowerPending = false;
 let sawSystemOffline = false;
 let modeIndicatorUpdating = false;
@@ -951,7 +951,7 @@ function setGameSystem(system) {
 
 function populateGameDropdown() {
     const select = document.getElementById(
-        'ps1-game-select'
+        'game-guide-select'
     );
 
     if (!select) return;
@@ -980,7 +980,7 @@ function populateGameDropdown() {
 
     if (filteredGames.length) {
         select.selectedIndex = 0;
-        renderPs1GameCard();
+        renderGameGuideCard();
     }
 }
 
@@ -1339,9 +1339,9 @@ function closePs2CalibrationModal() {
     document.getElementById('ps2-calibration-modal').style.display = 'none';
 }
 
-function closePs1GameGuideModal() {
+function closeGameGuideModal() {
     const modal = document.getElementById(
-        'ps1-game-guide-modal'
+        'game-guide-modal'
     );
 
     if (modal) {
@@ -1449,13 +1449,13 @@ function appendPs1TextList(
     section.appendChild(list);
 }
 
-function renderPs1GameCard() {
+function renderGameGuideCard() {
     const select = document.getElementById(
-        'ps1-game-select'
+        'game-guide-select'
     );
 
     const container = document.getElementById(
-        'ps1-game-card'
+        'game-guide-card'
     );
 
     if (!select || !container) {
@@ -1650,17 +1650,17 @@ function renderPs1GameCard() {
 
 
 
-async function loadPs1Games() {
+async function loadGameGuides() {
     const select = document.getElementById(
-        'ps1-game-select'
+        'game-guide-select'
     );
 
     const status = document.getElementById(
-        'ps1-game-guide-status'
+        'game-guide-status'
     );
 
     const container = document.getElementById(
-        'ps1-game-card'
+        'game-guide-card'
     );
 
     if (!select || !status || !container) {
@@ -1673,7 +1673,7 @@ async function loadPs1Games() {
 
     try {
         const response = await fetch(
-            '/api/ps1/games',
+            '/api/game-guides',
             {
                 cache: 'no-store'
             }
@@ -1725,9 +1725,9 @@ async function loadPs1Games() {
     }
 }
 
-async function openPs1GameGuideModal() {
+async function openGameGuideModal() {
     const modal = document.getElementById(
-        'ps1-game-guide-modal'
+        'game-guide-modal'
     );
 
     const platformSelect = document.getElementById(
@@ -1755,7 +1755,7 @@ async function openPs1GameGuideModal() {
 
     modal.style.display = 'block';
 
-    await loadPs1Games();
+    await loadGameGuides();
 }
 
 function drawFanCurve(config) {
@@ -2869,7 +2869,7 @@ async function loadConfig(platform) {
     );
 
     const gameGuideBtn = document.getElementById(
-        'btn-ps1-game-guide'
+        'btn-game-guide'
     );
 
     if (calibBtn) {
