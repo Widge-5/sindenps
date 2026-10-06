@@ -163,13 +163,13 @@
 		border-radius: 6px;
 	}
 
-	.ps1-game-title {
+	.game-guide-title {
 		color: var(--theme-accent);
 		font-size: 24px;
 		margin: 18px 0 12px;
 	}
 
-	.ps1-game-summary {
+	.game-guide-summary {
 		display: grid;
 		grid-template-columns: repeat(
 			auto-fit,
@@ -179,7 +179,7 @@
 		margin-bottom: 12px;
 	}
 
-	.ps1-game-summary-card {
+	.game-guide-summary-card {
 		background: #181818;
 		border: 1px solid #333;
 		border-radius: 6px;
@@ -187,19 +187,19 @@
 		text-align: center;
 	}
 
-	.ps1-game-summary-label {
+	.game-guide-summary-label {
 		color: #aaa;
 		font-size: 13px;
 		margin-bottom: 6px;
 	}
 
-	.ps1-game-summary-value {
+	.game-guide-summary-value {
 		color: #fff;
 		font-size: 18px;
 		font-weight: 700;
 	}
 
-	.ps1-game-section {
+	.game-guide-section {
 		background: #0d0d0d;
 		border: 1px solid #333;
 		border-left: 6px solid var(--theme-border);
@@ -208,18 +208,18 @@
 		padding: 12px;
 	}
 
-	.ps1-game-section h3 {
+	.game-guide-section h3 {
 		color: var(--theme-accent);
 		margin: 0 0 10px;
 	}
 
-	.ps1-game-list {
+	.game-guide-list {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 	}
 
-	.ps1-game-list li {
+	.game-guide-list li {
 		background: #181818;
 		border: 1px solid #333;
 		border-radius: 6px;
@@ -227,20 +227,20 @@
 		padding: 10px;
 	}
 
-	.ps1-game-empty {
+	.game-guide-empty {
 		color: #888;
 		font-style: italic;
 	}
 
-	.ps1-game-native {
+	.game-guide-native {
 		color: #66ff99;
 	}
 
-	.ps1-game-patch {
+	.game-guide-patch {
 		color: #ffcc44;
 	}
 
-	.ps1-game-unsupported {
+	.game-guide-unsupported {
 		color: #ff6666;
 	}
 	.system-toggle {
@@ -342,21 +342,21 @@
 		#game-guide-card {
 			padding-bottom: 6px;
 		}
-		.ps1-game-summary {
+		.game-guide-summary {
 			grid-template-columns: 1fr 1fr;
 		}
 
-		.ps1-game-summary-card:nth-child(1) {
+		.game-guide-summary-card:nth-child(1) {
 			grid-column: 1 / -1;
 			grid-row: 2;
 		}
 
-		.ps1-game-summary-card:nth-child(2) {
+		.game-guide-summary-card:nth-child(2) {
 			grid-column: 1;
 			grid-row: 1;
 		}
 
-		.ps1-game-summary-card:nth-child(3) {
+		.game-guide-summary-card:nth-child(3) {
 			grid-column: 2;
 			grid-row: 1;
 		}
@@ -1374,7 +1374,7 @@ function ps1GunSupportClass(value) {
         support === 'preferred' ||
         support === 'secret weapon'
     ) {
-        return 'ps1-game-native';
+        return 'game-guide-native';
     }
 
     if (
@@ -1383,14 +1383,14 @@ function ps1GunSupportClass(value) {
         support.includes('needs work') ||
         support === 'unofficial'
     ) {
-        return 'ps1-game-patch';
+        return 'game-guide-patch';
     }
 
     if (
         support.includes('not supported') ||
         support === 'no'
     ) {
-        return 'ps1-game-unsupported';
+        return 'game-guide-unsupported';
     }
 
     return '';
@@ -1398,14 +1398,14 @@ function ps1GunSupportClass(value) {
 
 function createGameSummaryCard(labelText, valueText) {
     const card = document.createElement('div');
-    card.className = 'ps1-game-summary-card';
+    card.className = 'game-guide-summary-card';
 
     const label = document.createElement('div');
-    label.className = 'ps1-game-summary-label';
+    label.className = 'game-guide-summary-label';
     label.textContent = labelText;
 
     const value = document.createElement('div');
-    value.className = 'ps1-game-summary-value';
+    value.className = 'game-guide-summary-value';
     value.textContent = valueText;
 
     card.appendChild(label);
@@ -1416,7 +1416,7 @@ function createGameSummaryCard(labelText, valueText) {
 
 function createPs1GameSection(titleText) {
     const section = document.createElement('section');
-    section.className = 'ps1-game-section';
+    section.className = 'game-guide-section';
 
     const heading = document.createElement('h3');
     heading.textContent = titleText;
@@ -1433,14 +1433,14 @@ function appendPs1TextList(
 ) {
     if (!Array.isArray(items) || !items.length) {
         const empty = document.createElement('div');
-        empty.className = 'ps1-game-empty';
+        empty.className = 'game-guide-empty';
         empty.textContent = emptyText;
         section.appendChild(empty);
         return;
     }
 
     const list = document.createElement('ul');
-    list.className = 'ps1-game-list';
+    list.className = 'game-guide-list';
 
     items.forEach(item => {
         const row = document.createElement('li');
@@ -1477,7 +1477,7 @@ function renderGameGuideCard() {
     }
 
     const title = document.createElement('h2');
-    title.className = 'ps1-game-title';
+    title.className = 'game-guide-title';
     title.textContent =
         game.title || 'Unknown Game';
 
@@ -1486,7 +1486,7 @@ function renderGameGuideCard() {
     const regions = game.regions || {};
 
     const summary = document.createElement('div');
-    summary.className = 'ps1-game-summary';
+    summary.className = 'game-guide-summary';
 
     summary.appendChild(
         createGameSummaryCard(
@@ -1524,7 +1524,7 @@ function renderGameGuideCard() {
             document.createElement('div');
 
         empty.className =
-            'ps1-game-empty';
+            'game-guide-empty';
 
         empty.textContent =
             'No gun support information documented.';
@@ -1534,7 +1534,7 @@ function renderGameGuideCard() {
         const list =
             document.createElement('ul');
 
-        list.className = 'ps1-game-list';
+        list.className = 'game-guide-list';
 
         gunSupport.forEach(item => {
             const row =
@@ -1584,7 +1584,7 @@ function renderGameGuideCard() {
             document.createElement('div');
 
         empty.className =
-            'ps1-game-empty';
+            'game-guide-empty';
 
         empty.textContent =
             'No special port configuration documented.';
@@ -1594,7 +1594,7 @@ function renderGameGuideCard() {
         const list =
             document.createElement('ul');
 
-        list.className = 'ps1-game-list';
+        list.className = 'game-guide-list';
 
         ports.forEach(port => {
             const row =
