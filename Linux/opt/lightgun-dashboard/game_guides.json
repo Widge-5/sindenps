@@ -233,7 +233,7 @@
       }
     ],
     "requirements": [
-      "Flash or select the custom SONY-ANALOG firmware.",
+      "Flash the SindenPS Adapter with the custom SONY-ANALOG firmware.",
       "SindenPS supports 2 Players, to use 4 Players requires two Raspberry Pi's running SindenPS.",
       "Do not use Hyper Blaster / Justifier or G-Con45 / Guncon firmware."
     ],
