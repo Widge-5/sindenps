@@ -1115,7 +1115,9 @@
     }
   ],
   "requirements": [],
-  "notes": []
+  "notes": [
+    "Supports only G-Con45 / GunCon devices."
+  ]
 },
   {
     "title": "Endgame",
