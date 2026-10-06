@@ -214,16 +214,16 @@
     },
     "gun_support": [
       {
+        "name": "Sony Dual Analog",
+        "support": "Custom Firmware"
+      },
+      {
         "name": "Hyper Blaster / Justifier",
         "support": "No"
       },
       {
         "name": "G-Con45 / Guncon",
         "support": "No"
-      },
-      {
-        "name": "Sony Dual Analog",
-        "support": "Custom Firmware"
       }
     ],
     "ports": [
@@ -617,11 +617,20 @@
         "support": "Native"
       },
       {
+        "name": "G-Con2 / GunCon2",
+        "support": "No"
+      },
+      {
         "name": "G-Con45 / Guncon",
         "support": "No"
       }
     ],
-    "ports": [],
+    "ports": [
+      {
+        "port": "Controller Port 1",
+        "device": "Hyper Blaster / Justifier"
+      }
+    ],
     "requirements": [],
     "notes": [
       "Also known as The Keisatsukan: Shinjuku Ni Ju Yon Ji in Japan.",
@@ -1092,12 +1101,12 @@
   },
   "gun_support": [
     {
-      "name": "G-Con2 / GunCon2",
-      "support": "No"
-    },
-    {
       "name": "G-Con45 / Guncon",
       "support": "Native"
+    },
+    {
+      "name": "G-Con2 / GunCon2",
+      "support": "No"
     },
     {
       "name": "Hyper Blaster / Justifier",
